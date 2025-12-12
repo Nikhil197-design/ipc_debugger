@@ -1,0 +1,50 @@
+{
+    "application": {
+        "name": "IPC Debugger",
+        "version": "2.0.0",
+        "author": "IPC Debug Team"
+    },
+    "gui": {
+        "width": 1400,
+        "height": 800,
+        "theme": "clam",
+        "refresh_rate_ms": 100,
+        "auto_refresh": true
+    },
+    "monitoring": {
+        "max_log_entries": 1000,
+        "performance_sample_size": 100,
+        "deadlock_check_interval_seconds": 2,
+        "process_update_interval_seconds": 0.5
+    },
+    "colors": {
+        "process_running": "#2ECC71",
+        "process_blocked": "#E74C3C",
+        "process_waiting": "#F39C12",
+        "process_ready": "#3498DB",
+        "process_terminated": "#95A5A6",
+        "ipc_pipe": "#3498DB",
+        "ipc_queue": "#9B59B6",
+        "ipc_shared_memory": "#E67E22",
+        "ipc_socket": "#16A085"
+    },
+    "performance": {
+        "latency_threshold_ms": 100,
+        "high_latency_threshold_ms": 500,
+        "cpu_usage_warning_percent": 80,
+        "memory_usage_warning_mb": 500,
+        "queue_size_warning": 100
+    },
+    "export": {
+        "default_format": "json",
+        "include_raw_data": false,
+        "compress_exports": false,
+        "max_export_size_mb": 100
+    },
+    "test_scenarios": {
+        "enabled": true,
+        "auto_start": false,
+        "scenario_timeout_seconds": 30,
+        "cleanup_on_exit": true
+    }
+}
